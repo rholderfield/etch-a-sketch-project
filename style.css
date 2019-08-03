@@ -1,4 +1,45 @@
 .container {
-    display: grid;
+  display: grid;
+  grid-template-columns: 1vw 96vw 1vw;
+  grid-template-rows: 2vw 45vw 2vw;
+  grid-template-areas:
+    "header header header"
+    "left middle right"
+    "footer footer footer";
 }
 
+.top {
+  grid-area: header;
+}
+
+.left {
+  grid-area: left;
+}
+.middle {
+  display: grid;
+  grid-area: middle;
+}
+
+.right {
+  grid-area: right;
+}
+
+.bottom {
+  grid-area: footer;
+}
+
+.greyed {
+  background-color: darkgrey;
+}
+
+button {
+    background-color: rgb(77, 24, 15); 
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 0.15vw;
+}
